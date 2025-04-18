@@ -1,0 +1,17 @@
+on: push
+
+jobs:
+  job1-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Imprimir saudação
+        run: echo "Hello fucking world"
+  job2-goodbye:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1 - Instrução
+        run: |
+          echo "Nova instrução"
+          ls
+      - name: Step 2 - Imprimir o foda-se
+        run: echo "Foda-se!"
